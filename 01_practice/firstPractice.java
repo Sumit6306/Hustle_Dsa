@@ -2,6 +2,8 @@ package DSA.Practice;
 
 import java.util.ArrayList;
 public class firstPractice{
+
+
 static ArrayList<Integer> allIndices(int[] arr, int target, int idx) {
         if (idx >= arr.length) return new ArrayList<Integer>();//return empty array
         ArrayList<Integer> small = new ArrayList<>();
