@@ -3,6 +3,21 @@ package DSA.Hustle_A1;
 import java.util.Scanner;
 
 public class onePractice {
+
+
+    static int tripletSum(int [] arr , int x ){
+        int ans =0;
+        for (int i = 0; i < arr.length; i++){
+            for (int j = i+1; j < arr.length; j++){
+                for (int k = j+1; k < arr.length; k++){
+                    if (arr[i]+arr[j]+arr[k]==x){
+                        ans++;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
     static int pairSum(int[] arr, int x) {
         int ans = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -14,6 +29,9 @@ public class onePractice {
         }
         return ans;
     }
+
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of Array");
@@ -25,7 +43,9 @@ public class onePractice {
         }
         System.out.println("Enter the value of X:");
         int x = sc.nextInt();
-        System.out.println("Pair sum is :");
-        System.out.print(pairSum(arr,x));
+        //System.out.println("Pair sum is :");
+        //System.out.print(pairSum(arr,x));
+        System.out.println("Triplet sum is :");
+        System.out.println(tripletSum(arr,x));
     }
 }
