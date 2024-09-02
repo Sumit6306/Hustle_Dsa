@@ -21,7 +21,7 @@ public class stringPalindrome {
         if(rev.equals(s)){
             System.out.println("YES PALINDROME :" + s);
         }else{
-            System.out.println("NOT A PALINDROME: " + s);
+            System.out.println("NOT A PALINDROE: " + s);
         }
     }
 }
