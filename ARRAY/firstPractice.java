@@ -1,4 +1,4 @@
-package DSA.Practice;
+package DSA.ARRAY;
 
 import java.util.ArrayList;
 public class firstPractice{
