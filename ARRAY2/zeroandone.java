@@ -22,6 +22,19 @@ public class zeroandone {
             }
         }
     }
+    static void sortZeroOnes(int []arr){
+        int n= arr.length;
+        int numberOfZeroes=0;
+        for (int i=0;i<n;i++) {
+            if (arr[i] == 0) numberOfZeroes++;
+        }
+          for(int i=0;i<numberOfZeroes;i++){
+              arr[i]=0;
+          }
+          for(int i=numberOfZeroes;i<n;i++){
+              arr[i]=1;
+          }
+    }
     static void printarry(int []arr){
         int n =arr.length;
         for (int i=0;i<n;i++){
@@ -40,7 +53,7 @@ public class zeroandone {
         for (int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-   zeroandonssort(arr);
+        sortZeroOnes(arr);
         System.out.println("SORTED ARRAY");
         printarry(arr);
 
